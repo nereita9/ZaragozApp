@@ -19,17 +19,14 @@ class RequestsManager: NSObject {
     }
 
     
-    func sendGetRequest(_ endpoint: String, params: [String: Any]? = nil,  completion: @escaping ([String:Any]) -> Void) {
+    func sendGetRequest(_ endpoint: String, params: [String: Any]? = [:],  completion: @escaping ([String:Any]) -> Void) {
 
-//        Alamofire.request(endpoint, method: .get)
-//        .validate()
-//        .response (completionHandler: { response in
+        let headers: HTTPHeaders = [
+            "Accept": "application/json"
+        ]
 
-        Alamofire.request(endpoint,
-                          method: .get,
-                          parameters: [:],
-                          headers: ["Content-Type" :"application/json"])
-            .responseString { response in
+        Alamofire.request(endpoint, method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers)
+            .responseJSON { response in
                 guard response.result.isSuccess else {
                     print("Error while fetching tags: \(response.result.error)")
                     completion([String:Any]())
@@ -37,6 +34,7 @@ class RequestsManager: NSObject {
                 }
             
                 do {
+                    
                     if let responseJSON = try JSONSerialization.jsonObject(with: response.data!, options: .mutableContainers) as? [String: Any] {
                         print(responseJSON)
                         completion(responseJSON)
