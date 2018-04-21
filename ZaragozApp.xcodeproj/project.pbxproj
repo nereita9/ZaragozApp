@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		000B499D20821231001DB42E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B499C20821231001DB42E /* AppDelegate.swift */; };
-		000B499F20821231001DB42E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B499E20821231001DB42E /* FirstViewController.swift */; };
-		000B49A120821231001DB42E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B49A020821231001DB42E /* SecondViewController.swift */; };
+		000B499F20821231001DB42E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B499E20821231001DB42E /* TodayViewController.swift */; };
+		000B49A120821231001DB42E /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B49A020821231001DB42E /* EventsViewController.swift */; };
 		000B49A420821231001DB42E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000B49A220821231001DB42E /* Main.storyboard */; };
 		000B49A620821231001DB42E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000B49A520821231001DB42E /* Assets.xcassets */; };
 		000B49A920821231001DB42E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000B49A720821231001DB42E /* LaunchScreen.storyboard */; };
 		000B49B420821231001DB42E /* ZaragozAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B49B320821231001DB42E /* ZaragozAppTests.swift */; };
+		006C2452208B3E8B00492785 /* RequestsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006C2451208B3E8B00492785 /* RequestsManager.swift */; };
+		00FC936F208B44FB002438CF /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC936E208B44FB002438CF /* Endpoints.swift */; };
+		B0CABDFEE5133E4E64A4C615 /* Pods_ZaragozApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D697F982C81FD4F1C0C6F80F /* Pods_ZaragozApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +32,8 @@
 /* Begin PBXFileReference section */
 		000B499920821231001DB42E /* ZaragozApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZaragozApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		000B499C20821231001DB42E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		000B499E20821231001DB42E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		000B49A020821231001DB42E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		000B499E20821231001DB42E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		000B49A020821231001DB42E /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		000B49A320821231001DB42E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		000B49A520821231001DB42E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		000B49A820821231001DB42E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +41,11 @@
 		000B49AF20821231001DB42E /* ZaragozAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZaragozAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		000B49B320821231001DB42E /* ZaragozAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaragozAppTests.swift; sourceTree = "<group>"; };
 		000B49B520821231001DB42E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		006C2451208B3E8B00492785 /* RequestsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsManager.swift; sourceTree = "<group>"; };
+		00FC936E208B44FB002438CF /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		41B4A54916E9DA1579F86907 /* Pods-ZaragozApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZaragozApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZaragozApp/Pods-ZaragozApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B691D74AFB89D8A21D21E6EA /* Pods-ZaragozApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZaragozApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZaragozApp/Pods-ZaragozApp.release.xcconfig"; sourceTree = "<group>"; };
+		D697F982C81FD4F1C0C6F80F /* Pods_ZaragozApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZaragozApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0CABDFEE5133E4E64A4C615 /* Pods_ZaragozApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +73,8 @@
 				000B499B20821231001DB42E /* ZaragozApp */,
 				000B49B220821231001DB42E /* ZaragozAppTests */,
 				000B499A20821231001DB42E /* Products */,
+				7D41DFB8B9E02C4B01BCA2E1 /* Pods */,
+				4A8929DEB7E2C59FDCD7FAB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,12 +90,12 @@
 		000B499B20821231001DB42E /* ZaragozApp */ = {
 			isa = PBXGroup;
 			children = (
+				006C244F208B3D2E00492785 /* Scene */,
+				006C2450208B3D3800492785 /* API */,
 				000B499C20821231001DB42E /* AppDelegate.swift */,
-				000B499E20821231001DB42E /* FirstViewController.swift */,
-				000B49A020821231001DB42E /* SecondViewController.swift */,
 				000B49A220821231001DB42E /* Main.storyboard */,
-				000B49A520821231001DB42E /* Assets.xcassets */,
 				000B49A720821231001DB42E /* LaunchScreen.storyboard */,
+				000B49A520821231001DB42E /* Assets.xcassets */,
 				000B49AA20821231001DB42E /* Info.plist */,
 			);
 			path = ZaragozApp;
@@ -99,6 +110,57 @@
 			path = ZaragozAppTests;
 			sourceTree = "<group>";
 		};
+		006C244D208B3C7200492785 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				000B49A020821231001DB42E /* EventsViewController.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		006C244E208B3C9C00492785 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				000B499E20821231001DB42E /* TodayViewController.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		006C244F208B3D2E00492785 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				006C244E208B3C9C00492785 /* Today */,
+				006C244D208B3C7200492785 /* Events */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		006C2450208B3D3800492785 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				006C2451208B3E8B00492785 /* RequestsManager.swift */,
+				00FC936E208B44FB002438CF /* Endpoints.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4A8929DEB7E2C59FDCD7FAB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D697F982C81FD4F1C0C6F80F /* Pods_ZaragozApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D41DFB8B9E02C4B01BCA2E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41B4A54916E9DA1579F86907 /* Pods-ZaragozApp.debug.xcconfig */,
+				B691D74AFB89D8A21D21E6EA /* Pods-ZaragozApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 000B49B820821231001DB42E /* Build configuration list for PBXNativeTarget "ZaragozApp" */;
 			buildPhases = (
+				C083DCB9C59901FCB754CB31 /* [CP] Check Pods Manifest.lock */,
 				000B499520821231001DB42E /* Sources */,
 				000B499620821231001DB42E /* Frameworks */,
 				000B499720821231001DB42E /* Resources */,
+				9C9FB0F122DCD4332C5CB58A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +213,7 @@
 				TargetAttributes = {
 					000B499820821231001DB42E = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = ZPHFG55HXV;
 						ProvisioningStyle = Automatic;
 					};
 					000B49AE20821231001DB42E = {
@@ -197,14 +262,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9C9FB0F122DCD4332C5CB58A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZaragozApp/Pods-ZaragozApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZaragozApp/Pods-ZaragozApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C083DCB9C59901FCB754CB31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZaragozApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		000B499520821231001DB42E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				000B49A120821231001DB42E /* SecondViewController.swift in Sources */,
+				000B49A120821231001DB42E /* EventsViewController.swift in Sources */,
 				000B499D20821231001DB42E /* AppDelegate.swift in Sources */,
-				000B499F20821231001DB42E /* FirstViewController.swift in Sources */,
+				006C2452208B3E8B00492785 /* RequestsManager.swift in Sources */,
+				000B499F20821231001DB42E /* TodayViewController.swift in Sources */,
+				00FC936F208B44FB002438CF /* Endpoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,25 +449,33 @@
 		};
 		000B49B920821231001DB42E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B4A54916E9DA1579F86907 /* Pods-ZaragozApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZPHFG55HXV;
 				INFOPLIST_FILE = ZaragozApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ngonzalez.ZaragozApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		000B49BA20821231001DB42E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B691D74AFB89D8A21D21E6EA /* Pods-ZaragozApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZPHFG55HXV;
 				INFOPLIST_FILE = ZaragozApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ngonzalez.ZaragozApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -412,6 +526,7 @@
 				000B49BA20821231001DB42E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		000B49BB20821231001DB42E /* Build configuration list for PBXNativeTarget "ZaragozAppTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +535,7 @@
 				000B49BD20821231001DB42E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

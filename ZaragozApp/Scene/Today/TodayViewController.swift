@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  TodayViewController.swift
 //  ZaragozApp
 //
 //  Created by Nerea Gonzalez Vazquez on 14/04/2018.
@@ -8,12 +8,20 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class TodayViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        RequestsManager.sharedInstance.getTodayEventsRequest(completion: { result in
+            print(result)
+        })
+        
+        
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

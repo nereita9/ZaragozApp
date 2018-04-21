@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  EventsViewController.swift
 //  ZaragozApp
 //
 //  Created by Nerea Gonzalez Vazquez on 14/04/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class EventsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
