@@ -28,7 +28,7 @@ class RequestsManager: NSObject {
         Alamofire.request(endpoint, method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers)
             .responseJSON { response in
                 guard response.result.isSuccess else {
-                    print("Error while fetching tags: \(response.result.error)")
+                    print("Error while fetching tags: \(String(describing: response.result.error))")
                     completion([String:Any]())
                     return
                 }
