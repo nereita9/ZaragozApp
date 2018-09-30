@@ -15,7 +15,7 @@ class TodayViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         
-        RequestsManager.sharedInstance.getTodayEventsRequest(completion: { result in
+        RequestsManager.getTodayEventsRequest(completion: { result in
             print(result)
         })
         

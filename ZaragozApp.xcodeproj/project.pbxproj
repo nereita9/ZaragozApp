@@ -16,6 +16,8 @@
 		000B49B420821231001DB42E /* ZaragozAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B49B320821231001DB42E /* ZaragozAppTests.swift */; };
 		006C2452208B3E8B00492785 /* RequestsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006C2451208B3E8B00492785 /* RequestsManager.swift */; };
 		00FC936F208B44FB002438CF /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC936E208B44FB002438CF /* Endpoints.swift */; };
+		8A199E30216127AD00B7C166 /* Today.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A199E2F216127AD00B7C166 /* Today.storyboard */; };
+		8A199E322161287100B7C166 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A199E312161287100B7C166 /* Events.storyboard */; };
 		B0CABDFEE5133E4E64A4C615 /* Pods_ZaragozApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D697F982C81FD4F1C0C6F80F /* Pods_ZaragozApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		006C2451208B3E8B00492785 /* RequestsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsManager.swift; sourceTree = "<group>"; };
 		00FC936E208B44FB002438CF /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		41B4A54916E9DA1579F86907 /* Pods-ZaragozApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZaragozApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZaragozApp/Pods-ZaragozApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8A199E2F216127AD00B7C166 /* Today.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Today.storyboard; sourceTree = "<group>"; };
+		8A199E312161287100B7C166 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
 		B691D74AFB89D8A21D21E6EA /* Pods-ZaragozApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZaragozApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZaragozApp/Pods-ZaragozApp.release.xcconfig"; sourceTree = "<group>"; };
 		D697F982C81FD4F1C0C6F80F /* Pods_ZaragozApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZaragozApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -93,8 +97,10 @@
 				006C244F208B3D2E00492785 /* Scene */,
 				006C2450208B3D3800492785 /* API */,
 				000B499C20821231001DB42E /* AppDelegate.swift */,
-				000B49A220821231001DB42E /* Main.storyboard */,
 				000B49A720821231001DB42E /* LaunchScreen.storyboard */,
+				000B49A220821231001DB42E /* Main.storyboard */,
+				8A199E2F216127AD00B7C166 /* Today.storyboard */,
+				8A199E312161287100B7C166 /* Events.storyboard */,
 				000B49A520821231001DB42E /* Assets.xcassets */,
 				000B49AA20821231001DB42E /* Info.plist */,
 			);
@@ -249,9 +255,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A199E30216127AD00B7C166 /* Today.storyboard in Resources */,
 				000B49A920821231001DB42E /* LaunchScreen.storyboard in Resources */,
 				000B49A620821231001DB42E /* Assets.xcassets in Resources */,
 				000B49A420821231001DB42E /* Main.storyboard in Resources */,
+				8A199E322161287100B7C166 /* Events.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
