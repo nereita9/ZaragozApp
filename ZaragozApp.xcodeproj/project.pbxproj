@@ -16,8 +16,13 @@
 		000B49B420821231001DB42E /* ZaragozAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B49B320821231001DB42E /* ZaragozAppTests.swift */; };
 		006C2452208B3E8B00492785 /* RequestsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006C2451208B3E8B00492785 /* RequestsManager.swift */; };
 		00FC936F208B44FB002438CF /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC936E208B44FB002438CF /* Endpoints.swift */; };
+		8A17E27121612E3A009923FF /* TodayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17E27021612E3A009923FF /* TodayPresenter.swift */; };
+		8A17E27321612E77009923FF /* EventsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17E27221612E77009923FF /* EventsPresenter.swift */; };
+		8A17E27621613187009923FF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17E27521613187009923FF /* Event.swift */; };
 		8A199E30216127AD00B7C166 /* Today.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A199E2F216127AD00B7C166 /* Today.storyboard */; };
 		8A199E322161287100B7C166 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A199E312161287100B7C166 /* Events.storyboard */; };
+		8AEE3AC421622EC100FFDDAD /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEE3AC221622EC100FFDDAD /* EventCell.swift */; };
+		8AEE3AC521622EC100FFDDAD /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AEE3AC321622EC100FFDDAD /* EventCell.xib */; };
 		B0CABDFEE5133E4E64A4C615 /* Pods_ZaragozApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D697F982C81FD4F1C0C6F80F /* Pods_ZaragozApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,8 +51,13 @@
 		006C2451208B3E8B00492785 /* RequestsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsManager.swift; sourceTree = "<group>"; };
 		00FC936E208B44FB002438CF /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		41B4A54916E9DA1579F86907 /* Pods-ZaragozApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZaragozApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZaragozApp/Pods-ZaragozApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8A17E27021612E3A009923FF /* TodayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayPresenter.swift; sourceTree = "<group>"; };
+		8A17E27221612E77009923FF /* EventsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsPresenter.swift; sourceTree = "<group>"; };
+		8A17E27521613187009923FF /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		8A199E2F216127AD00B7C166 /* Today.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Today.storyboard; sourceTree = "<group>"; };
 		8A199E312161287100B7C166 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
+		8AEE3AC221622EC100FFDDAD /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		8AEE3AC321622EC100FFDDAD /* EventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
 		B691D74AFB89D8A21D21E6EA /* Pods-ZaragozApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZaragozApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZaragozApp/Pods-ZaragozApp.release.xcconfig"; sourceTree = "<group>"; };
 		D697F982C81FD4F1C0C6F80F /* Pods_ZaragozApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZaragozApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -95,12 +105,12 @@
 			isa = PBXGroup;
 			children = (
 				006C244F208B3D2E00492785 /* Scene */,
+				8AEE3AC121622E9800FFDDAD /* Views */,
+				8A17E27421612EAC009923FF /* Model */,
 				006C2450208B3D3800492785 /* API */,
 				000B499C20821231001DB42E /* AppDelegate.swift */,
 				000B49A720821231001DB42E /* LaunchScreen.storyboard */,
 				000B49A220821231001DB42E /* Main.storyboard */,
-				8A199E2F216127AD00B7C166 /* Today.storyboard */,
-				8A199E312161287100B7C166 /* Events.storyboard */,
 				000B49A520821231001DB42E /* Assets.xcassets */,
 				000B49AA20821231001DB42E /* Info.plist */,
 			);
@@ -120,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				000B49A020821231001DB42E /* EventsViewController.swift */,
+				8A17E27221612E77009923FF /* EventsPresenter.swift */,
+				8A199E312161287100B7C166 /* Events.storyboard */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -128,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				000B499E20821231001DB42E /* TodayViewController.swift */,
+				8A17E27021612E3A009923FF /* TodayPresenter.swift */,
+				8A199E2F216127AD00B7C166 /* Today.storyboard */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -165,6 +179,23 @@
 				B691D74AFB89D8A21D21E6EA /* Pods-ZaragozApp.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A17E27421612EAC009923FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A17E27521613187009923FF /* Event.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8AEE3AC121622E9800FFDDAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8AEE3AC221622EC100FFDDAD /* EventCell.swift */,
+				8AEE3AC321622EC100FFDDAD /* EventCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +290,7 @@
 				000B49A920821231001DB42E /* LaunchScreen.storyboard in Resources */,
 				000B49A620821231001DB42E /* Assets.xcassets in Resources */,
 				000B49A420821231001DB42E /* Main.storyboard in Resources */,
+				8AEE3AC521622EC100FFDDAD /* EventCell.xib in Resources */,
 				8A199E322161287100B7C166 /* Events.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,10 +313,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZaragozApp/Pods-ZaragozApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityLogger.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -316,7 +350,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A17E27621613187009923FF /* Event.swift in Sources */,
+				8AEE3AC421622EC100FFDDAD /* EventCell.swift in Sources */,
+				8A17E27121612E3A009923FF /* TodayPresenter.swift in Sources */,
 				000B49A120821231001DB42E /* EventsViewController.swift in Sources */,
+				8A17E27321612E77009923FF /* EventsPresenter.swift in Sources */,
 				000B499D20821231001DB42E /* AppDelegate.swift in Sources */,
 				006C2452208B3E8B00492785 /* RequestsManager.swift in Sources */,
 				000B499F20821231001DB42E /* TodayViewController.swift in Sources */,

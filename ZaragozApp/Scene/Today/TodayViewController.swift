@@ -8,26 +8,26 @@
 
 import UIKit
 
-class TodayViewController: UIViewController {
+class TodayViewController: UITableViewController {
+    
+    fileprivate let todayPresenter = TodayPresenter(requestsManager: RequestsManager())
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
+        todayPresenter.registerDelegate(delegate: self)
+        todayPresenter.getTodayEvents()
         
-        RequestsManager.getTodayEventsRequest(completion: { result in
-            print(result)
-        })
-        
-        
+    }
+
+}
+
+//MARK: - TodayPresenterDelegate
+extension TodayViewController: TodayPresenterDelegate {
+    func consolePrint(data: Any) {
+        print(data)
     }
     
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
 }
 

@@ -4,6 +4,7 @@ use_frameworks!
 
 target 'ZaragozApp' do
     pod 'Alamofire'
+    pod 'AlamofireNetworkActivityLogger'
 end
 
 

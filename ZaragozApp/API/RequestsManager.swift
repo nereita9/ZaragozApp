@@ -12,14 +12,30 @@ import Alamofire
 class RequestsManager: NSObject {
     
     //MARK: - Public
-    static func getTodayEventsRequest(completion: @escaping ([String: Any]) -> Void) {
-        let endpoint = API.baseUrl + API.getTodayEvents
-        self.sendGetRequest(endpoint, completion: completion)
+    func getTodayEventsRequest(onSuccess: @escaping ([Event]) -> Void,
+                                      onFailure: @escaping (Error) -> Void) {
+        
+        let url = API.baseUrl + API.getTodayEventsEndpoint
+        
+        let todaySuccess:  ([[String: Any]]) -> Void = { results in
+            
+            var events = [Event]()
+            for result in results {
+                events.append(Event(json: result))
+            }
+
+            onSuccess(events)
+            
+        }
+        self.sendGetRequest(url, onSuccess: todaySuccess, onFailure: onFailure)
     }
 
     //MARK: - Private
     
-    fileprivate static func sendGetRequest(_ endpoint: String, params: [String: Any]? = [:],  completion: @escaping ([String: Any]) -> Void) {
+    fileprivate func sendGetRequest(_ endpoint: String,
+                                           params: [String: Any]? = [:],
+                                           onSuccess: @escaping ([[String: Any]]) -> Void,
+                                           onFailure: @escaping (Error) -> Void) {
 
         let headers: HTTPHeaders = [
             "Accept": "application/json"
@@ -27,32 +43,15 @@ class RequestsManager: NSObject {
 
         Alamofire.request(endpoint, method: .get, parameters: params, encoding: JSONEncoding.default, headers: headers)
             .responseJSON { response in
-                guard response.result.isSuccess else {
-                    print("Error while fetching tags: \(String(describing: response.result.error))")
-                    completion([String: Any]())
-                    return
-                }
-            
-                do {
-                    
-                    if let responseJSON = try JSONSerialization.jsonObject(with: response.data!, options: .mutableContainers) as? [String: Any] {
-                        
-                        print(responseJSON)
-                        completion(responseJSON)
-                        
-                        return
-                    } else {
-                        print("Failed to cast to Dictionary")
-                        completion([String:Any]())
-                    }
-                } catch let error as NSError {
-                    
-                    print("Failed to load: \(error.localizedDescription)")
-                    completion([String:Any]())
-                    
-                }
                 
-               
+                guard let responseJSON = response.result.value as? [String: Any], let results = responseJSON["result"] as? [[String: Any]] else {
+                    
+                let error = response.result.error ?? NSError()
+                onFailure(error)
+                return
+            }
+            onSuccess(results)
+      
         }
     }
     
