@@ -8,29 +8,59 @@
 
 import Foundation
 import Alamofire
+import Kingfisher
 
 class RequestsManager: NSObject {
     
     //MARK: - Public
-    func getTodayEventsRequest(onSuccess: @escaping ([Event]) -> Void,
-                                      onFailure: @escaping (Error) -> Void) {
+    func getEventsRequest(onSuccess: @escaping ([Event]) -> Void,
+                          onFailure: @escaping (Error) -> Void){
         
-        let url = API.baseUrl + API.getTodayEventsEndpoint
+        let url = API.baseUrl + API.getEventsEndpoint
         
-        let todaySuccess:  ([[String: Any]]) -> Void = { results in
+        let eventsSuccess:  ([[String: Any]]) -> Void = { results in
             
             var events = [Event]()
             for result in results {
-                events.append(Event(json: result))
+                let event = Event(json: result)
+                events.append(event)
             }
-
             onSuccess(events)
-            
+
         }
-        self.sendGetRequest(url, onSuccess: todaySuccess, onFailure: onFailure)
+        
+        sendGetRequest(url, onSuccess: eventsSuccess, onFailure: onFailure)
+    }
+    
+    func loadImagesRequest(events: [Event],
+                           onImageLoaded: @escaping (UIImage, Int) -> Void ){
+        
+        for (index, event) in events.enumerated() {
+            loadImage(imageUrlString: event.imageUrl, index: index, success: onImageLoaded)
+        }
+  
     }
 
     //MARK: - Private
+    
+    fileprivate func loadImage(imageUrlString: String, index: Int, success: @escaping (UIImage, Int) -> () ) {
+        
+        if !imageUrlString.isEmpty {
+            
+            guard let url = CommonHelper.getHttpsUrl(from: imageUrlString) else {
+                return
+            }
+            
+            KingfisherManager.shared.retrieveImage(with: url, options: nil, progressBlock: nil, completionHandler: {  image, error, cacheType, imageURL in
+                
+                if let safeImage = image {
+                    success(safeImage, index)
+                }
+                
+            })
+        }
+    }
+    
     
     fileprivate func sendGetRequest(_ endpoint: String,
                                            params: [String: Any]? = [:],

@@ -5,6 +5,8 @@ use_frameworks!
 target 'ZaragozApp' do
     pod 'Alamofire'
     pod 'AlamofireNetworkActivityLogger'
+    pod 'Kingfisher'
+    pod 'MBProgressHUD'
 end
 
 

@@ -28,25 +28,29 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Today Controller-->
+        <!--Events Controller-->
         <scene sceneID="hJP-fc-23J">
             <objects>
-                <viewControllerPlaceholder storyboardName="Today" referencedIdentifier="TodayId" id="wyX-1m-Lc2" userLabel="Today Controller" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="zQM-mt-RRo"/>
+                <viewControllerPlaceholder storyboardName="Events" referencedIdentifier="EventsId" id="wyX-1m-Lc2" userLabel="Events Controller" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Events" image="first" id="zQM-mt-RRo"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0cP-e1-jB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="737" y="-83"/>
         </scene>
-        <!--Events Controller-->
+        <!--Calendar Controller-->
         <scene sceneID="3V2-3A-KHP">
             <objects>
-                <viewControllerPlaceholder storyboardName="Events" referencedIdentifier="EventsId" id="vav-MB-hBn" userLabel="Events Controller" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="c9a-Tb-Ao5"/>
+                <viewControllerPlaceholder storyboardName="Calendar" referencedIdentifier="CalendarId" id="vav-MB-hBn" userLabel="Calendar Controller" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Calendar" image="second" id="c9a-Tb-Ao5"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uxH-kv-Gch" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="714" y="34"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
 </document>

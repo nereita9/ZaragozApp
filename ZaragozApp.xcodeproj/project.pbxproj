@@ -8,19 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		000B499D20821231001DB42E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B499C20821231001DB42E /* AppDelegate.swift */; };
-		000B499F20821231001DB42E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B499E20821231001DB42E /* TodayViewController.swift */; };
-		000B49A120821231001DB42E /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B49A020821231001DB42E /* EventsViewController.swift */; };
+		000B499F20821231001DB42E /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B499E20821231001DB42E /* EventsViewController.swift */; };
+		000B49A120821231001DB42E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B49A020821231001DB42E /* CalendarViewController.swift */; };
 		000B49A420821231001DB42E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000B49A220821231001DB42E /* Main.storyboard */; };
 		000B49A620821231001DB42E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000B49A520821231001DB42E /* Assets.xcassets */; };
 		000B49A920821231001DB42E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000B49A720821231001DB42E /* LaunchScreen.storyboard */; };
 		000B49B420821231001DB42E /* ZaragozAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B49B320821231001DB42E /* ZaragozAppTests.swift */; };
 		006C2452208B3E8B00492785 /* RequestsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006C2451208B3E8B00492785 /* RequestsManager.swift */; };
 		00FC936F208B44FB002438CF /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC936E208B44FB002438CF /* Endpoints.swift */; };
-		8A17E27121612E3A009923FF /* TodayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17E27021612E3A009923FF /* TodayPresenter.swift */; };
-		8A17E27321612E77009923FF /* EventsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17E27221612E77009923FF /* EventsPresenter.swift */; };
+		8A17E27121612E3A009923FF /* EventsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17E27021612E3A009923FF /* EventsPresenter.swift */; };
+		8A17E27321612E77009923FF /* CalendarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17E27221612E77009923FF /* CalendarPresenter.swift */; };
 		8A17E27621613187009923FF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17E27521613187009923FF /* Event.swift */; };
-		8A199E30216127AD00B7C166 /* Today.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A199E2F216127AD00B7C166 /* Today.storyboard */; };
-		8A199E322161287100B7C166 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A199E312161287100B7C166 /* Events.storyboard */; };
+		8A199E30216127AD00B7C166 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A199E2F216127AD00B7C166 /* Events.storyboard */; };
+		8A199E322161287100B7C166 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A199E312161287100B7C166 /* Calendar.storyboard */; };
+		8A1BC2BB216364AB0036FB6A /* CommonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1BC2BA216364AB0036FB6A /* CommonHelper.swift */; };
 		8AEE3AC421622EC100FFDDAD /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEE3AC221622EC100FFDDAD /* EventCell.swift */; };
 		8AEE3AC521622EC100FFDDAD /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AEE3AC321622EC100FFDDAD /* EventCell.xib */; };
 		B0CABDFEE5133E4E64A4C615 /* Pods_ZaragozApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D697F982C81FD4F1C0C6F80F /* Pods_ZaragozApp.framework */; };
@@ -39,8 +40,8 @@
 /* Begin PBXFileReference section */
 		000B499920821231001DB42E /* ZaragozApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZaragozApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		000B499C20821231001DB42E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		000B499E20821231001DB42E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		000B49A020821231001DB42E /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		000B499E20821231001DB42E /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		000B49A020821231001DB42E /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		000B49A320821231001DB42E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		000B49A520821231001DB42E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		000B49A820821231001DB42E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,11 +52,12 @@
 		006C2451208B3E8B00492785 /* RequestsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsManager.swift; sourceTree = "<group>"; };
 		00FC936E208B44FB002438CF /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		41B4A54916E9DA1579F86907 /* Pods-ZaragozApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZaragozApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZaragozApp/Pods-ZaragozApp.debug.xcconfig"; sourceTree = "<group>"; };
-		8A17E27021612E3A009923FF /* TodayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayPresenter.swift; sourceTree = "<group>"; };
-		8A17E27221612E77009923FF /* EventsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsPresenter.swift; sourceTree = "<group>"; };
+		8A17E27021612E3A009923FF /* EventsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsPresenter.swift; sourceTree = "<group>"; };
+		8A17E27221612E77009923FF /* CalendarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPresenter.swift; sourceTree = "<group>"; };
 		8A17E27521613187009923FF /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		8A199E2F216127AD00B7C166 /* Today.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Today.storyboard; sourceTree = "<group>"; };
-		8A199E312161287100B7C166 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
+		8A199E2F216127AD00B7C166 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
+		8A199E312161287100B7C166 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		8A1BC2BA216364AB0036FB6A /* CommonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonHelper.swift; sourceTree = "<group>"; };
 		8AEE3AC221622EC100FFDDAD /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		8AEE3AC321622EC100FFDDAD /* EventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
 		B691D74AFB89D8A21D21E6EA /* Pods-ZaragozApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZaragozApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZaragozApp/Pods-ZaragozApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,8 +106,9 @@
 		000B499B20821231001DB42E /* ZaragozApp */ = {
 			isa = PBXGroup;
 			children = (
+				8A1BC2B9216364980036FB6A /* Helpers */,
 				006C244F208B3D2E00492785 /* Scene */,
-				8AEE3AC121622E9800FFDDAD /* Views */,
+				8AEE3AC121622E9800FFDDAD /* Cells */,
 				8A17E27421612EAC009923FF /* Model */,
 				006C2450208B3D3800492785 /* API */,
 				000B499C20821231001DB42E /* AppDelegate.swift */,
@@ -126,31 +129,31 @@
 			path = ZaragozAppTests;
 			sourceTree = "<group>";
 		};
-		006C244D208B3C7200492785 /* Events */ = {
+		006C244D208B3C7200492785 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				000B49A020821231001DB42E /* EventsViewController.swift */,
-				8A17E27221612E77009923FF /* EventsPresenter.swift */,
-				8A199E312161287100B7C166 /* Events.storyboard */,
+				000B49A020821231001DB42E /* CalendarViewController.swift */,
+				8A17E27221612E77009923FF /* CalendarPresenter.swift */,
+				8A199E312161287100B7C166 /* Calendar.storyboard */,
 			);
-			path = Events;
+			path = Calendar;
 			sourceTree = "<group>";
 		};
-		006C244E208B3C9C00492785 /* Today */ = {
+		006C244E208B3C9C00492785 /* Events */ = {
 			isa = PBXGroup;
 			children = (
-				000B499E20821231001DB42E /* TodayViewController.swift */,
-				8A17E27021612E3A009923FF /* TodayPresenter.swift */,
-				8A199E2F216127AD00B7C166 /* Today.storyboard */,
+				000B499E20821231001DB42E /* EventsViewController.swift */,
+				8A17E27021612E3A009923FF /* EventsPresenter.swift */,
+				8A199E2F216127AD00B7C166 /* Events.storyboard */,
 			);
-			path = Today;
+			path = Events;
 			sourceTree = "<group>";
 		};
 		006C244F208B3D2E00492785 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				006C244E208B3C9C00492785 /* Today */,
-				006C244D208B3C7200492785 /* Events */,
+				006C244E208B3C9C00492785 /* Events */,
+				006C244D208B3C7200492785 /* Calendar */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -189,13 +192,21 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		8AEE3AC121622E9800FFDDAD /* Views */ = {
+		8A1BC2B9216364980036FB6A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8A1BC2BA216364AB0036FB6A /* CommonHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8AEE3AC121622E9800FFDDAD /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				8AEE3AC221622EC100FFDDAD /* EventCell.swift */,
 				8AEE3AC321622EC100FFDDAD /* EventCell.xib */,
 			);
-			path = Views;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,12 +297,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A199E30216127AD00B7C166 /* Today.storyboard in Resources */,
+				8A199E30216127AD00B7C166 /* Events.storyboard in Resources */,
 				000B49A920821231001DB42E /* LaunchScreen.storyboard in Resources */,
 				000B49A620821231001DB42E /* Assets.xcassets in Resources */,
 				000B49A420821231001DB42E /* Main.storyboard in Resources */,
 				8AEE3AC521622EC100FFDDAD /* EventCell.xib in Resources */,
-				8A199E322161287100B7C166 /* Events.storyboard in Resources */,
+				8A199E322161287100B7C166 /* Calendar.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,11 +325,15 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZaragozApp/Pods-ZaragozApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -352,12 +367,13 @@
 			files = (
 				8A17E27621613187009923FF /* Event.swift in Sources */,
 				8AEE3AC421622EC100FFDDAD /* EventCell.swift in Sources */,
-				8A17E27121612E3A009923FF /* TodayPresenter.swift in Sources */,
-				000B49A120821231001DB42E /* EventsViewController.swift in Sources */,
-				8A17E27321612E77009923FF /* EventsPresenter.swift in Sources */,
+				8A17E27121612E3A009923FF /* EventsPresenter.swift in Sources */,
+				000B49A120821231001DB42E /* CalendarViewController.swift in Sources */,
+				8A17E27321612E77009923FF /* CalendarPresenter.swift in Sources */,
 				000B499D20821231001DB42E /* AppDelegate.swift in Sources */,
+				8A1BC2BB216364AB0036FB6A /* CommonHelper.swift in Sources */,
 				006C2452208B3E8B00492785 /* RequestsManager.swift in Sources */,
-				000B499F20821231001DB42E /* TodayViewController.swift in Sources */,
+				000B499F20821231001DB42E /* EventsViewController.swift in Sources */,
 				00FC936F208B44FB002438CF /* Endpoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
