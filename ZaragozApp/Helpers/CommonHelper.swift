@@ -18,7 +18,7 @@ class CommonHelper {
             return isDateFromPast
         }
         let todayDate = DateInRegion(Date(), region: .current)
-        if  date.compare(toDate: todayDate, granularity: .hour) == .orderedAscending {
+        if  date.compare(toDate: todayDate, granularity: .hour) == .orderedDescending {
             isDateFromPast = false
         }
         return isDateFromPast
