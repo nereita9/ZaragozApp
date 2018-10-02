@@ -23,7 +23,10 @@ class RequestsManager: NSObject {
             var events = [Event]()
             for result in results {
                 let event = Event(json: result)
-                events.append(event)
+                
+                if !CommonHelper.isPastDate(event.startDate) {
+                    events.append(event)
+                }
             }
             onSuccess(events)
 
@@ -31,6 +34,7 @@ class RequestsManager: NSObject {
         
         sendGetRequest(url, onSuccess: eventsSuccess, onFailure: onFailure)
     }
+    
     
     func loadImagesRequest(events: [Event],
                            onImageLoaded: @escaping (UIImage, Int) -> Void ){
@@ -47,7 +51,7 @@ class RequestsManager: NSObject {
         
         if !imageUrlString.isEmpty {
             
-            guard let url = CommonHelper.getHttpsUrl(from: imageUrlString) else {
+            guard let url = CommonHelper.httpsUrl(from: imageUrlString) else {
                 return
             }
             

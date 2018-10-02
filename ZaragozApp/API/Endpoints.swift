@@ -11,7 +11,7 @@ import Foundation
 
 struct API {
     static let baseUrl = "https://www.zaragoza.es/sede"
-    static let getEventsEndpoint = "/servicio/cultura/evento/list"
+    static let getEventsEndpoint = "/servicio/cultura/evento/list?daysLeft=0"
     
 }
 

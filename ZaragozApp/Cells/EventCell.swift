@@ -23,11 +23,11 @@ class EventCell: UITableViewCell {
     //MARK: - Globals
     static let cellId = "EventCellId"
     static let cellName = "EventCell"
-    static let cellMaxHeight: CGFloat = 360
+    static let cellMaxHeight: CGFloat = 350
     
     //MARK: - Constants
     let zeroHeight: CGFloat = 0
-    let imageViewHeight: CGFloat = 250
+    let imageViewHeight: CGFloat = 235
     
     //MARK: - Override functions
     
@@ -44,7 +44,7 @@ class EventCell: UITableViewCell {
         
         typeLabel.text = event.type.capitalized
         titleLabel.text = event.title.capitalized
-        dateLabel.text = event.startDate
+        dateLabel.text = CommonHelper.datePretty(event.startDate)
         eventImageView.image = event.image
         
         if let _ = event.image {
@@ -59,6 +59,7 @@ class EventCell: UITableViewCell {
         selectionStyle = .none
         eventImageView.contentMode = .scaleAspectFill
         eventImageView.clipsToBounds = true
+        titleLabel.numberOfLines = 0
     }
     
     fileprivate func updateImageViewHeight(isHidden: Bool) {

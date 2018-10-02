@@ -7,6 +7,7 @@ target 'ZaragozApp' do
     pod 'AlamofireNetworkActivityLogger'
     pod 'Kingfisher'
     pod 'MBProgressHUD'
+    pod 'SwiftDate'
 end
 
 

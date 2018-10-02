@@ -7,10 +7,43 @@
 //
 
 import Foundation
+import SwiftDate
 
 class CommonHelper {
     
-    static func getHttpsUrl(from text: String) -> URL? {
+    static func isPastDate(_ dateString: String) -> Bool {
+        
+        var isDateFromPast = true
+        guard let date = dateString.toDate() else {
+            return isDateFromPast
+        }
+        let todayDate = DateInRegion(Date(), region: .current)
+        if  date.compare(toDate: todayDate, granularity: .hour) == .orderedAscending {
+            isDateFromPast = false
+        }
+        return isDateFromPast
+    }
+    
+    static func datePretty(_ dateString: String) -> String {
+        
+        var prettyDateString = ""
+        guard let date = dateString.toDate() else {
+            return prettyDateString
+        }
+        
+        if date.compare(.isToday) {
+            prettyDateString = "Hoy"
+        } else if date.compare(.isTomorrow) {
+            prettyDateString = "Mañana"
+        } else {
+            prettyDateString = date.toFormat("dd MMM")
+        }
+        
+        return prettyDateString
+        
+    }
+    
+    static func httpsUrl(from text: String) -> URL? {
         
         let types: NSTextCheckingResult.CheckingType = .link
         
@@ -31,4 +64,5 @@ class CommonHelper {
         }
         
     }
+    
 }
